@@ -14,6 +14,7 @@ Requirements
 __Mac__
 
 pygame 1.9.2pre
+
 http://www.pygame.org/ftp/pygame-1.9.2pre-py2.7-macosx10.7.mpkg.zip
 
 __Other platforms__
