@@ -45,8 +45,12 @@ while True:
 
 		if pygame.event.event_name(x.type) == 'KeyDown':
 			if x.key == pygame.K_UP:
-				player1_rect.top -= 25
+				player2_rect.top -= 25
 			if x.key == pygame.K_DOWN:
+				player2_rect.top += 25
+			if x.key == pygame.K_a:
+				player1_rect.top -= 25
+			if x.key == pygame.K_z:
 				player1_rect.top += 25
 
 
@@ -73,16 +77,17 @@ while True:
 		hei = 1
 
 	if ball_rect.right == display.get_width():
-		wid = -1
-	#	gameover = 1
+		gameover = 1
 
 	if ball_rect.left == 0:
 		gameover = 1
 
 	if ball_rect.colliderect(player1_rect) == True:
 		wid = 1
-		
 
+	if ball_rect.colliderect(player2_rect) == True:
+		wid = -1
+		
 
 
 	display.fill((0, 0, 0))
