@@ -7,10 +7,6 @@ pygame.init()
 
 display = pygame.display.set_mode((600, 400))
 
-#font = pygame.font.Font(None, 20)
-#text = font.render('Hello World', 0, (0,0,0))
-#display.blit(text, (0,0))
-
 ball = pygame.Surface((10, 10))
 ball.fill((255, 255, 255))
 
